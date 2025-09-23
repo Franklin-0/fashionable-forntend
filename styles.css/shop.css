@@ -4,6 +4,11 @@
   background: #fff;
   text-align: center;
 }
+.container {
+  max-width: 437px;   /* lock your content width */
+  margin: 0 auto;     /* centers it -> equal left/right space */
+  padding: 0 15px;    /* optional: small space so text/images don’t touch edges */
+}
 
 .shop-title {
   font-size: 2.5rem;
