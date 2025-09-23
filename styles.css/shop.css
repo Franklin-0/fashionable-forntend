@@ -48,7 +48,11 @@ select {
   max-width: 1200px; /* Set a max-width for the grid */
   margin: 0 auto; /* Center the grid */
 }
-
+.container {
+  max-width: 1200px;   /* site won’t stretch beyond this */
+  margin: 0 auto;      /* centers on all screen sizes */
+  padding: 0 15px;     /* small padding so it doesn’t touch edges */
+}
 .product {
   text-align: center;
   position: relative; /* Needed for positioning the favourites button */
