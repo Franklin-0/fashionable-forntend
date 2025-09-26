@@ -14,7 +14,12 @@ body{
   box-sizing: border-box;
 }
 
-
+/* Global Container */
+.container {
+  max-width: 98%;   /* site won’t stretch beyond this */
+  margin: 0 auto;      /* centers on all screen sizes */
+  padding: 0 15px;     /* small padding so it doesn’t touch edges */
+}
 
 /* Navbar */
 .navbar {
