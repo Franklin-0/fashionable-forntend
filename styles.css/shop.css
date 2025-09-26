@@ -1,6 +1,6 @@
 /* Shop Section */
 #shop {
-  padding: 50px 20px;
+  padding: 50px 0;
   background: #fff;
   text-align: center;
 }
@@ -48,20 +48,15 @@ select {
   max-width: 1200px; /* Set a max-width for the grid */
   margin: 0 auto; /* Center the grid */
 }
-.container {
-  max-width: 1200px;   /* site won’t stretch beyond this */
-  margin: 0 auto;      /* centers on all screen sizes */
-  padding: 0 15px;     /* small padding so it doesn’t touch edges */
-}
+
 .product {
   text-align: center;
   position: relative; /* Needed for positioning the favourites button */
-  background-color: white
-  ; /* A light background for the card */
+  background-color: white; /* A light background for the card */
 }
 
 .product img {
-  width: 120%;
+  width: 107%;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -471,3 +466,26 @@ select {
     display: none;
   }
 }
+
+@media (max-width: 480px) {
+  .product {
+    height: auto; /* card grows naturally */
+  }
+
+  .product img {
+    width: 100%;        /* fills the card width */
+    height: auto;       /* keeps original ratio */
+    max-height: 280px;  /* optional: prevents images from getting too tall */
+    object-fit: contain; /* keep whole image visible */
+    border-radius: 10px;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .product img {
+    max-height: 240px; /* slightly smaller on very small screens */
+  }
+}
+
