@@ -470,7 +470,7 @@ select {
 @media (max-width: 480px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr); /* exactly 2 shoes per row */
-    column-gap: 4px;  /* small buffer between shoes */
+    column-gap: 8px;  /* small buffer between shoes */
     row-gap: 18px;    /* vertical spacing */
   }
 
