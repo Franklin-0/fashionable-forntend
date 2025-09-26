@@ -56,7 +56,8 @@ select {
 .product {
   text-align: center;
   position: relative; /* Needed for positioning the favourites button */
-  background-color: #f9f9f9; /* A light background for the card */
+  background-color: transparent
+  ; /* A light background for the card */
 }
 
 .product img {
