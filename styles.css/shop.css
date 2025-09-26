@@ -468,15 +468,21 @@ select {
 }
 
 @media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* exactly 2 shoes per row */
+    column-gap: 8px;  /* small buffer between shoes */
+    row-gap: 18px;    /* vertical spacing */
+  }
+
   .product {
-    height: auto; /* card grows naturally */
+    height: auto; /* let cards grow naturally */
   }
 
   .product img {
-    width: 100%;        /* fills the card width */
-    height: auto;       /* keeps original ratio */
-    max-height: 280px;  /* optional: prevents images from getting too tall */
-    object-fit: contain; /* keep whole image visible */
+    width: 100%;        
+    height: auto;       
+    max-height: 280px;  
+    object-fit: contain; 
     border-radius: 10px;
     display: block;
     margin: 0 auto;
@@ -484,8 +490,14 @@ select {
 }
 
 @media (max-width: 375px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr); /* still 2 per row */
+    column-gap: 5px;  /* very tight buffer */
+    row-gap: 15px;
+  }
+
   .product img {
-    max-height: 240px; /* slightly smaller on very small screens */
+    max-height: 240px; 
   }
 }
 
